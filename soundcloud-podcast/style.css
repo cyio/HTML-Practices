@@ -1,0 +1,152 @@
+*{margin: 0px;}
+
+a  {text-decoration: none;}
+li {list-style-type: none;}
+h1 {font-weight: 400;
+    font-size: 2.6em;}
+
+.container {
+    max-width: 1240px;
+    margin: 0px auto;
+    background-color: #f2f2f2;
+    font: 16px/1.5 Interstate,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+    color: #333;
+}
+
+#menu {
+    height: 446px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    background-image: url(banner.jpg)
+}
+
+.topnav {
+    height: 48px;
+    border-top: 4px solid #F50;
+}
+
+.sitenav {
+    padding:  2px 15px 12px 30px;
+    margin: 0;
+    }
+
+.sitenav li{
+    float: left;
+    margin-right: 15px;
+    line-height: 48px;
+}
+
+.sitenav li a{color: #FFF;}
+
+.sitenav li a:hover{color: #F50;}
+
+.sitenav span {
+    color: #f50;
+    text-transform: uppercase;
+}
+
+#menu .headerlogo{ 
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;    
+    right: 15px;
+    width: 200px;
+    height: 46px;
+    background: url(logo.png) center 12px/170px 92px no-repeat;
+}
+
+.banner {
+    margin: 50px 30px 35px;
+}
+
+.banner span {
+    color: #f50;
+    text-transform: uppercase;
+}
+
+.banner_tagline {
+    padding-top: 12px;
+}
+
+.banner_actions {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 186px;
+    height: 46px;
+    background-color: #f50;
+}
+
+.upload_button {
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    display: block;
+}
+
+#mainContent {
+    background-color: #fff;
+}
+
+.listingModule {
+    padding: 5% 8%;}
+
+#why h2 {
+    font-size: 40px;
+    line-height: 1.125;
+    text-align: center;    
+}
+
+.listingModule_figures {
+    margin: 60px 0;
+}
+
+.listingModule_figure, .listingModule_item {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+
+.listingModule_figure:last-child, .listingModule_item:last-child{
+    margin-right: 0;
+}
+
+.sc-clearfix::after, .sc-clearfix::before {
+    content: "";
+    display: table;
+}
+.factFigure {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #f50;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.factFigure_title {
+    margin-top: 40px;
+    line-height: 1.1;
+    font-size: 60px;
+    color: #f50;
+    font-weight: 100;
+}
+
+.factFigure_subtitle {
+    padding: 0 20px;
+    line-height: 1.1;
+    color: #333;
+}
+
+#why h3 {
+    color: #f50;
+   font-size: 28px; 
+}
+
+#why p {
+    padding: 10px 0px;    
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 63%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.box {
+    width: 450px;
+    padding-top: 2em;
+    margin: 0 auto;
+}
+.listbox {
+    float: right;
+    width: 75px;
+    height: 40px;
+    background-color: #efefef;
+}
+
+.box .listbox ul li{
+    float:left;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-left: 1px solid #E4E4E4;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease 0s;
+}
+
+.icon {
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background:transparent url(http://s1.jikexueyuan.com/current/static/images/preview-icon.png) no-repeat scroll 0px 0px;
+}
+
+li.list-icon .icon{
+    width:19px;
+    background-position: -15px 0px;
+}
+
+li.kuai-icon .icon{
+    width:19px;
+    background-position: 0px 0px;
+}
+
+li.curr, li:hover {
+    background: #FFF none repeat scroll 0% 0%;
+}
+body {
+    background: gray;
+}

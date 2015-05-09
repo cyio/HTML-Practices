@@ -1,0 +1,62 @@
+
+.avatar {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+
+.post {
+    position: relative;
+    padding: 2em;
+    text-align: left;
+    background: #efefef;
+    border-bottom: 1px solid lightblue;
+}
+
+.post .content{
+    margin-left: 4em;
+}
+
+.post .content span{
+    margin-right: 1em;
+}
+
+.name {
+    font-weight: bold;    
+}
+
+.account{
+    font-weight: lighter;
+    color:gray;
+}
+
+.time{
+    color:gray;
+    float: right;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+section .content{
+    margin-bottom: 1em;    
+}
+
+section .content p{
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+section .content img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+section .content footer a{
+    text-decoration: none;
+    color:gray;
+}
