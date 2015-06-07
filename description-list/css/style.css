@@ -6,7 +6,6 @@ header {
 	padding: 30px;
 }
 
-
 #box {  /* 初始化“盒模型”，设置宽度，因为不确定高度所以不设高度 */
  width: 500px;
  border: 2px solid #E6E6E6;

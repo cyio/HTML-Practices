@@ -11,6 +11,7 @@ li{list-style-type: none;}
     overflow: scroll;
     height: 100%;
     width: 100%;
+    background-image: -webkit-radial-gradient(circle, #3B3A53, #1B151F);
     background-image: radial-gradient(circle, #3B3A53, #1B151F);
 }
 
@@ -32,7 +33,9 @@ footer{
 }
 
 body {
+    background-image: -webkit-radial-gradient(circle, #3B3A53, #1B151F);
     background-image: radial-gradient(circle, #3B3A53, #1B151F);
+		background-color: #3B3A53;
     background-repeat: no-repeat;
     overflow-y: hidden;
     height: 100%;
@@ -64,7 +67,7 @@ header {
     border-radius: 3px;
 }
 
-header h1, header h2 {
+header{
     color: #fff;
 }
 
@@ -160,7 +163,7 @@ footer ul{
     padding-top: 15px;}
 
 footer ul li{
-    float: left;
+    display: inline;
     margin-right: 16px;
     font-weight: 100;
 }

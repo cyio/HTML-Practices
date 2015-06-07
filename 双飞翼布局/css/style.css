@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+#header{ height:50px; background:#EEEEEE}
+#header h1{ font-size:24px; text-align:center; line-height:1.5}
+#footer{height:50px; background:#EEEEEE;text-align:center; line-height:50px; }
+.grid-c{height: 50px; padding:5px; border:1px solid #CCCCCC;   }
+.grid-c3e-s5e6,.grid-c3g-s5e6,.grid-c3h-s5e6,.grid-c3i-s5e6,.grid-c3j-s5e6,.grid-c3k-s12e12,.grid-c3l-s12e12,.grid-c3m-s6e24,.grid-c3m-s24e6{margin-top:20px;box-shadow: 2px 2px 15px rgba(8, 8, 2, 0.55);background: #B0AFB8;}
+.main-wrap{background:#D6D6D6;height:190px;}
+.col-sub{background:#E79F6D;height:90px;}
+.col-<h1>extra</h1>{background:#7BD;height:90px;}
+.main-wrap-a{background:#D6D6D6;height:90px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
