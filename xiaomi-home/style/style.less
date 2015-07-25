@@ -1,0 +1,35 @@
+@mi-red: #FF4A00;
+@gray: #8C8C8C;
+
+body {
+  margin: 0;
+  font: 14px/1.5 "Microsoft Yahei", arial, "Hiragino Sans GB", sans-serif;
+  color: #8C8C8C;
+  background-color: #FFF;
+}
+.container {
+  width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.siteTopBar {
+  height: 36px;
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 12px;
+  line-height: 36px;
+  color: #8c8c8c;
+  background: #fafafa;
+  position: relative;
+}
+
+
+.topNav {
+  ul {
+    li {
+      display: inline-block;
+      +:before {
+        content: ' | ';
+      }
+    }
+  }
+}
