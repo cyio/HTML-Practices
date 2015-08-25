@@ -4,9 +4,14 @@ requirejs.config({    // 小括号+大括号
   }
 });
 
-requirejs(['jquery'], function ($) {
+requirejs(['jquery', 'scrollto'], function ($, scrollto) {
+  var scroll = new scrollto.ScrollTo({
+//    dest: 500,
+//    speed: 2000
+  });
+  
 //  $('body').css('background-color', 'red');
-  $('#backTop').on('click', go);
+  $('#backTop').on('click', $.proxy(scroll.move, scroll)); // 解决this指向
   $(window).on('scroll', function () {
     checkPosition($(window).height());
   });

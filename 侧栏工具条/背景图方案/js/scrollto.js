@@ -4,18 +4,30 @@ define(['jquery'], function ($) {
     this.$el = $('html, body');
   }
   ScrollTo.prototype.move = function () {
-    this.$el.animate({
-      scrollTop: this.opts.dest
-    }, this.opts.speed);
+    var opts = this.opts;
+    var dest = opts.dest;
+    
+    if ($(window).scrollTop() != dest) {
+      if (!this.$el.is(':animated')) {
+//        console.log(1);
+        this.$el.animate({
+          scrollTop: dest
+        }, opts.speed);
+
+      }
+    }
   };
   ScrollTo.prototype.go = function () {
-    this.$el.scrollTop(this.opts.dest)
+    var dest = this.opts.dest
+    if ($(window).scrollTop() != dest) {
+      this.$el.scrollTop(dest);
+    }
   };
   ScrollTo.DEEFAULT = {
     dest: 0,
     speed: 800
   };
-  
+
   return {
     ScrollTo: ScrollTo
   }
