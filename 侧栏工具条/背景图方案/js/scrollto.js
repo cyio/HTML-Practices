@@ -1,15 +1,15 @@
 define(['jquery'], function ($) {
-  function ScrollTo(opts) { // 构造函数首字大写
+  function ScrollTo(opts) { // 构造函数首字母大写
     this.opts = $.extend({}, ScrollTo.DEEFAULT, opts);
     this.$el = $('html, body');
   }
   ScrollTo.prototype.move = function () {
     var opts = this.opts;
     var dest = opts.dest;
-    
-    if ($(window).scrollTop() != dest) {
+
+    if ($(window).scrollTop() !== dest) {
       if (!this.$el.is(':animated')) {
-//        console.log(1);
+        //        console.log(1);
         this.$el.animate({
           scrollTop: dest
         }, opts.speed);
@@ -18,8 +18,8 @@ define(['jquery'], function ($) {
     }
   };
   ScrollTo.prototype.go = function () {
-    var dest = this.opts.dest
-    if ($(window).scrollTop() != dest) {
+    var dest = this.opts.dest;
+    if ($(window).scrollTop() !== dest) {
       this.$el.scrollTop(dest);
     }
   };
@@ -30,5 +30,5 @@ define(['jquery'], function ($) {
 
   return {
     ScrollTo: ScrollTo
-  }
+  };
 });
