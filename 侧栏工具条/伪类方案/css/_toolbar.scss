@@ -1,0 +1,127 @@
+$toolbar-size: 52px;
+.toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: 5px;
+  margin-left: -$toolbar-size / 2;
+}
+
+.toolbar-item {
+  position: relative;
+  display: block;
+  width: $toolbar-size;
+  height: $toolbar-size;
+  margin-top: 1px;
+  &:hover {
+    .toolbar-btn {
+      &:before {
+        top: -$toolbar-size;
+      }
+      &:after {
+        top: 0;
+      }
+    }
+    &:after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: $toolbar-size - 6;
+    bottom: -10px;
+    width: 172px;
+    background-image: url(../img/toolbar_img.png);
+    background-repeat: no-repeat;
+    opacity: 0;
+    @include transform-origin(95% 95%);
+    transform: scale(0.01);
+    @include transition(all 1s);
+  }
+}
+
+.toolbar-item-weixin {
+  &:after {
+    content: "";
+    height: 212px;
+    background-position: 0 0;
+  }
+  .toolbar-btn {
+    @extend .icon-wechat;
+    &:after {
+      content: "公众账号";
+    }
+  }
+}
+
+.toolbar-item-feedback {
+  .toolbar-btn {
+    @extend .icon-yijianfankui;
+    &:after {
+      content: "意见反馈";
+    }
+  }
+}
+
+.toolbar-item-app {
+  &:after {
+    content: "";
+    height: 194px;
+    background-position: 0 -222px;
+  }
+  .toolbar-btn {
+    @extend .icon-app;
+    &:after {
+      content: "APP下载";
+    }
+  }
+}
+
+.toolbar-item-top {
+  .toolbar-btn {
+    @extend .icon-dingbu;
+    &:after {
+      content: "返回项部";
+    }
+  }
+}
+
+.toolbar-btn {
+  //icon
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: $toolbar-size;
+  height: $toolbar-size;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: $toolbar-size;
+    height: $toolbar-size;
+    background-color: #d0d6d9;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: $toolbar-size;
+    @include transition(top 1s);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: $toolbar-size;
+    width: $toolbar-size;
+    height: $toolbar-size;
+    background-color: #98a1a6;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+    padding-top: 12px;
+    @include transition(top 1s);
+  }
+}
